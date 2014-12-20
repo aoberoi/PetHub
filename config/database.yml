@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: pethub_production
-  username: pethub
-  password: ENV['PETHUB_DATABASE_PASSWORD']
+  url: <%= ENV['DATABASE_URL'] %>
